@@ -1,0 +1,148 @@
+.navbar{
+    background-color: white;
+}
+
+.cart-button{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 50px;
+    text-decoration:none;
+    transition: 0.3s background-color;
+
+}
+
+.cart-button:hover{
+    background-color: rgb(0,0,0,0.4);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #00000080;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: black;
+}
+
+a .icon-cart span {
+    display: inline-block; /* or 'block' */
+    background-color: red;
+    /* Add width property here */
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+
+@media(min-width:991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: black;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+}
+
+
+.product-details {
+    text-align: center;
+  }
+  
+  .product-details img {
+    max-width: 300px;
+  }
+
+
+
+  .price{
+    padding-top: 0px;
+    font-weight: 400;
+  }
+
+  .price-d{
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .btn-p{
+    border: none;
+    font-size: 12px;
+    padding: 7px 10px 7px 10px;
+    border-radius: 45px;
+    transition: .3s;
+  }
+
+  .btn-p:hover{
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+
+  }
+
+  .quantity-container {
+    margin-bottom: 10px;
+  }
+  
+  .quantity-btn {
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    
+    
+  }
+
+
+  .quantity-container {
+    padding-top: 10px;
+    
+  }
+  
+  .quantity-container .quantity-btn {
+    margin-right: 5px;
+  }
+  
+  .quantity-container .quantity {
+    margin: 0 5px;
+  }
+  
+  tr td:nth-child(2) > * {
+    padding-top: 10px; /* Price */
+  }
+  
+  tr td:nth-child(4) > * {
+    padding-top: 10px; /* Total */
+  }
+  
+  .remove-btn {
+    padding-top: 10px; /* Actions */
+  }

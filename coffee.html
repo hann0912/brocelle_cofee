@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Brocelle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="nav.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">
+          <img src="coffeelogo.jpg" alt="Logo" style="width:100px;" class="rounded-pill"> 
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Coffee Brocelle</h5>
+            <img src="coffeelogo.jpg" alt="Logo" style="width:70px;" class="rounded-pill">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="milktea.html">Milk Tea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" href="coffee.html">Coffee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="food.html">Food</a>
+              </li>
+            </ul>   
+          </div>
+        </div>
+        <a href="addtocart.html" class="cart-button">
+          <div class="icon-cart">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+        </svg>
+        <span>0</span>
+        </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </nav>
+    </header>
+
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="product-details d-flex align-items-center flex-column">
+            <img src="coffee-latte.jpg" alt="Coffee Latte" class="img-fluid mb-3">
+            <h4 class="mb-1 p-title">Coffee Latte</h4>
+            <b class="mb-0 price">RM11.00</b>
+            <p class="price-d">Price incl.SST (10%)</p>
+            <div class="quantity-container d-flex align-items-center">
+              <button class="quantity-btn minus-btn">-</button>
+              <span class="quantity">1</span>
+              <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="btn-p">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-details d-flex align-items-center flex-column">
+            <img src="americano.jpg" alt="Coffee Latte" class="img-fluid mb-3">
+            <h4 class="mb-1 p-title">Americano</h4>
+            <b class="mb-0 price">RM8.00</b>
+            <p class="price-d">Price incl.SST (10%)</p>
+            <div class="quantity-container d-flex align-items-center">
+              <button class="quantity-btn minus-btn">-</button>
+              <span class="quantity">1</span>
+              <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="btn-p">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="product-details d-flex align-items-center flex-column">
+            <img src="buttercream-latte.jpg" alt="Coffee Latte" class="img-fluid mb-3">
+            <h4 class="mb-1 p-title">Buttercream Latte</h4>
+            <b class="mb-0 price">RM12.00</b>
+            <p class="price-d">Price incl.SST (10%)</p>
+            <div class="quantity-container d-flex align-items-center">
+              <button class="quantity-btn minus-btn">-</button>
+              <span class="quantity">1</span>
+              <button class="quantity-btn plus-btn">+</button>
+            </div>
+            <button class="btn-p">Add to Cart</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="product-details d-flex align-items-center flex-column">
+                <img src="almond-macadimia-latte.jpg" alt="Coffee Latte" class="img-fluid mb-3">
+                <h4 class="mb-1 p-title">Almond Macadamia Latte</h4>
+                <b class="mb-0 price">RM13.00</b>
+                <p class="price-d">Price incl.SST (10%)</p>
+                <div class="quantity-container d-flex align-items-center">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+                <button class="btn-p">Add to Cart</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-details d-flex align-items-center flex-column">
+                <img src="cofee-mocha.jpg" alt="Coffee Latte" class="img-fluid mb-3">
+                <h4 class="mb-1 p-title">Caffe Mocha</h4>
+                <b class="mb-0 price">RM13.00</b>
+                <p class="price-d">Price incl.SST (10%)</p>
+                <div class="quantity-container d-flex align-items-center">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+                <button class="btn-p">Add to Cart</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-details d-flex align-items-center flex-column">
+                <img src="caramel-macchiato.jpg" alt="Coffee Latte" class="img-fluid mb-3">
+                <h4 class="mb-1 p-title">Caramel Macchiato</h4>
+                <b class="mb-0 price">RM13.00</b>
+                <p class="price-d">Price incl.SST (10%)</p>
+                <div class="quantity-container d-flex align-items-center">
+                  <button class="quantity-btn minus-btn">-</button>
+                  <span class="quantity">1</span>
+                  <button class="quantity-btn plus-btn">+</button>
+                </div>
+                <button class="btn-p">Add to Cart</button>
+              </div>
+            </div>
+         
+    </div>
+
+    
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.carousel-img img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    min-height: 500px;  
+   object-fit:cover
+  }
+
+  
+  .heading {
+    text-align: center;
+    display: block;
+  }
+
+  .heading h6{
+    font-weight: 350;
+    padding-top: 10px;
+  }
+
+  
